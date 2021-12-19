@@ -70,7 +70,7 @@ class Scene {
       setTimeout(() => {
         self.video.muted = !self.soundEnabled;
         self.video.play();
-      }, 4200);
+      }, 6000);
     };
 
     
@@ -94,8 +94,8 @@ class Scene {
     const video = document.createElement('video');
     this.video = video;
     video.setAttribute('crossorigin', 'anonymous');
-    //video.src = "https://player.vimeo.com/external/538877060.hd.mp4?s=4042b4dc217598f5ce7c4cf8b8c3787b42218ea3&profile_id=175";
-    video.src = "https://cf.appdrag.com/wassimdemo/asset/welcome.mp4";
+    video.src = "https://player.vimeo.com/external/538877060.hd.mp4?s=4042b4dc217598f5ce7c4cf8b8c3787b42218ea3&profile_id=175";
+    //video.src = "https://cf.appdrag.com/wassimdemo/asset/welcome.mp4";
     video.load();
     const videoTexture = new THREE.VideoTexture(video);
     videoTexture.wrapT = THREE.RepeatWrapping;
